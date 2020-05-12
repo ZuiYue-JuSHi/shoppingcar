@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/shoppingcar?serverTimezone=UTC
+    username: root
+    password: 8045
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  redis:
+    password: 8045
+mybatis:
+  type-aliases-package: com.zuiyue.shoppingcar.pojo
+  configuration:
+    use-generated-keys: true
+    map-underscore-to-camel-case: true
